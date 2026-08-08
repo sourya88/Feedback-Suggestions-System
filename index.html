@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Feedback & Suggestions System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Feedback & Suggestions</h1>
+
+        <p class="subtitle">
+            We value your feedback. Share your suggestions with us.
+        </p>
+
+        <form id="feedbackForm">
+
+            <div class="form-group">
+                <label for="name">Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                >
+
+                <small id="nameError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                >
+
+                <small id="emailError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="feedback">Feedback / Suggestion</label>
+
+                <textarea
+                    id="feedback"
+                    rows="5"
+                    placeholder="Write your feedback or suggestion..."
+                ></textarea>
+
+                <small id="feedbackError"></small>
+            </div>
+
+            <button type="submit" id="submitBtn">
+                Submit Feedback
+            </button>
+
+            <p id="message"></p>
+
+        </form>
+
+        <hr>
+
+        <h2>Submitted Feedback</h2>
+
+        <div id="feedbackList">
+            <p>Loading feedback...</p>
+        </div>
+
+    </div>
+
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
